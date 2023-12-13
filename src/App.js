@@ -6,6 +6,7 @@ function App() {
       <div> COOL </div>
       <div> COOL </div>
       <div> COOL </div>
+      <div> i hate front (not end) </div>
     </div>
 
   );
