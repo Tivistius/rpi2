@@ -1,14 +1,14 @@
 import React from 'react';
+import ArtistsList from "./pages/artistsList";
+import Artist from "./pages/artist";
+import {BrowserRouter, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div className= "App">
-      <div> COOL </div>
-      <div> COOL </div>
-      <div> COOL </div>
-      <div> i hate front (not end) </div>
-    </div>
-
+      <div>
+          <ArtistsList/>
+          <Artist/>
+      </div>
   );
 }
 export default App;
