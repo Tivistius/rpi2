@@ -1,0 +1,25 @@
+
+header {
+    width: 100%;
+    background-color: gray;
+    color: #fff;
+    height: 2.8vw;
+    font-size: 2.55vw;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li {
+
+  /*  font-size: 52pt;*/
+  /*  margin-right: 20px;*/
+}
+
+nav ul li a {
+    text-decoration: none;
+}
