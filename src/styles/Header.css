@@ -3,7 +3,7 @@ header {
     width: 100%;
     background-color: gray;
     color: #fff;
-    height: 5.8vw;
+    height: 5.05vw;
     font-size: 2.55vw;
 }
 
@@ -17,7 +17,7 @@ nav {
 }
 #ButtonStyle{
     font-size: 2.7vw;
-    padding: 0.5vw 0.7vh;
+    padding: 0.1vw 0.22vh;
     min-width: 0;
     min-height: 0;
     border-right: 0.4vh solid #1565c0;
