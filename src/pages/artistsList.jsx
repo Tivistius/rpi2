@@ -1,28 +1,22 @@
-import React from 'react';
-
-const ListItem = ({ item }) => {
-    return (
-        <li>{item.name}</li>
-    );
-};
-
-const data = [
-    { id: 1, name: 'Item 1' },
-    { id: 2, name: 'Item 2' },
-    { id: 3, name: 'Item 3' },
-];
+import React, {useState} from 'react';
+import ArtistItem from "../components/artistItem";
+import artistArray from "../test_data/test_data";
+import '../styles/artistList.css'
 
 const ArtistsList = () => {
+    const [artists, setArtists] = useState(artistArray);
     return (
         <div>
             <header>
 
             </header>
-            <ul>
-                {data.map((data) => (
-                    <ListItem key={data.id} item={data.name} />
-                ))}
-            </ul>
+            <div className={"bigContainer"}>  {/* All infoL */}
+                <ul style={{listStyleType: 'none', padding:'0px', margin:'0px'}}>
+                    {artists.map(artist =>
+                        <ArtistItem artist={artist}/>
+                    )}
+                </ul>
+            </div>
             <footer>
 
             </footer>
