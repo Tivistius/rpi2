@@ -5,6 +5,7 @@ import ArtistAllInfo from "../components/artistAllInfo";
 
 
 const Artist = () => {
+
     const [artists, setArtists] = useState([artistArray[0]]);
     return (
 

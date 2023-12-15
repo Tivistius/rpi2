@@ -1,14 +1,15 @@
 import React, {useState} from 'react';
 import {Avatar, ImageList, ImageListItem} from "@mui/material";
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
-import artistArray from "../test_data/test_data";
-import ArtistItem from "./artistItem";
 import TlItem from "./timelineItem";
-import Gallery from "./gallery";
+import ImageSlider from "./ImageSlider";
+import YouTubeVideo from "./YoutubeVid";
+import GoogleMapComponent from "./GoogleMap";
 
 
 const ArtistAllInfo = (props) => {
     const [artist, setArtists] = useState(props.artist.chronology);
+
     return (
 
         <div>
@@ -38,12 +39,15 @@ const ArtistAllInfo = (props) => {
                 <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} className={"gallery"}> {/* gallery */}
                     <h1> GALLERY </h1>
                     <div>
-                        <Gallery artists={props.artist.gallery}/>
+                        <ImageSlider images={props.artist.gallery}/>
                     </div>
                 </div>
                 <div className={"youtube_map"}> {/* youtube + map */}
+                    <YouTubeVideo/>
+
 
                 </div>
+
 
             </div>
 
