@@ -1,0 +1,26 @@
+.about-container {
+    border: 0.6vw solid #1e128a;
+    padding: 1.5vw;
+    border-radius: 7vw;
+    width: 80%;
+    margin: 2vw auto;
+    background-image: url("../../public/images/backgroundfortext2.jpg");
+    opacity : 0.79;
+}
+
+.about-content {
+    font-size: 3vw;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+}
+
+h2 {
+    margin:0;
+    font-weight: bolder;
+    font-size: 7vw;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-style: italic;
+    color: black;
+    text-align: center;
+}
