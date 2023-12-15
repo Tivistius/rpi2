@@ -3,6 +3,7 @@ import '../styles/footer.css'
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () => {
+
     return (
         <div className= 'AllDevs'>
             <div className= 'Devs'>
