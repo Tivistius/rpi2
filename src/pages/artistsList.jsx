@@ -7,9 +7,6 @@ const ArtistsList = () => {
     const [artists, setArtists] = useState(artistArray);
     return (
         <div>
-            <header>
-
-            </header>
             <div className={"bigContainer"}>  {/* All infoL */}
                 <ul style={{listStyleType: 'none', padding:'0px', margin:'0px'}}>
                     {artists.map(artist =>
@@ -17,9 +14,6 @@ const ArtistsList = () => {
                     )}
                 </ul>
             </div>
-            <footer>
-
-            </footer>
         </div>
     );
 };

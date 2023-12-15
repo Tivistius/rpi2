@@ -9,13 +9,7 @@ const Artist = () => {
     return (
 
         <div>
-            <header>
-
-            </header>
             <ArtistAllInfo artist={artists.pop()}/>
-            <footer>
-
-            </footer>
         </div>
     );
 };
