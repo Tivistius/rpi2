@@ -3,10 +3,11 @@ import artistArray from '../test_data/test_data.js'; // Путь к файлу t
 import '../styles/artist.css'
 import ArtistAllInfo from "../components/artistAllInfo";
 import axios from 'axios';
+import {useParams} from "react-router-dom";
 
 const Artist = () => {
 
-    const path = '../info.json';
+    const { id } = useParams();
 
 
     const fetchData = async () => {
