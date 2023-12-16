@@ -1,9 +1,21 @@
 .fullInfo{
     width:80%;
-    margin: 2vw auto;
+    margin: 7vw auto;
     border: 0.6vw solid #12868a;
-    border-radius: 7vw;
+    border-radius: 5vw;
     padding: 1.5vw;
+}
+
+.Name{
+    text-align: center;
+    margin:2vw 0 ;
+    padding:0;
+    font-family: 'Arial';
+    align-self: center;
+    font-size: 4vw;
+    font-style: italic;
+    font-weight: bold;
+
 }
 
 .Title{
@@ -21,19 +33,40 @@
 .PhotoPart{
     display:flex;
 
-    width:50%;
+    width:100%;
     flex-direction: column;
 }
 
 .ImageStyle{
-    width: 100%;
+    align-self: center;
+    margin:0 0 2vw 0 ;
+    width: 80%;
     height: auto;
     border-radius: 5vw;
 }
-
+.SecondDate{
+    text-align: right;
+    margin:0;
+}
 .Date{
+    text-align: center;
     font-family: 'Arial Narrow';
     font-style: italic;
     font-weight: bolder;
-    font-size: 5vw;
+    font-size: 4vw;
+}
+.shortDescription{
+    font-size: 2.4vw;
+    font-family: 'Arial Narrow';
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.buttonMore {
+    display: flex;
+    justify-content: center;
+}
+.Button{
+    padding: 1vw 2vw;
+    min-width: 0;
 }
