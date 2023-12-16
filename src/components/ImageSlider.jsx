@@ -32,7 +32,7 @@ const ImageSlider = ({ images }) => {
                     <img
                         src={`../images/${images[currentIndex]}`}
                         alt={images[currentIndex].alt}
-                        style={{ maxWidth: '100%', height: '35vw', objectFit: 'contain' }}
+                        style={{ maxWidth: '100%', height: '45vw', objectFit: 'contain' }}
                     />
                 </Slide>
             </Box>

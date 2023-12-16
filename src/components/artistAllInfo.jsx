@@ -24,16 +24,16 @@ const ArtistAllInfo = (props) => {
     console.log("history = ", history1);
     console.log("ARRAY??? - ",Array.isArray(history1));
     const [artist, setArtists] = useState(props.artist.history);
-    const gradientBorder = {
-        backgroundImage: 'linear-gradient(to right, #2196F3, #64B5F6)',
-        border: '2px solid #1A237E',
-        borderRadius: '8px',
-        padding: '16px',
-    };
+
     const boxWithBorder = {
-        border: '1vw solid #1A237E',
-        borderRadius: '8px',
-        padding: '5px',
+        marginTop:'4vw',
+        border: '0.6vw solid #12868a',
+        borderRadius: '5vw',
+        width:'100%',
+        height:'100%',
+        display:'flex',
+        flexDirection:'column',
+        alignItems:'center',
     };
 
     return (
@@ -43,7 +43,7 @@ const ArtistAllInfo = (props) => {
             <div className={"bigContainer"}>  {/* All infoL */}
                 {/* Box с обводкой */}
 
-                <Box style={gradientBorder}>
+                <Box style={boxWithBorder}>
                     <div className={"photo_short"}>
                         <Avatar className={"small_photo"} src={`../images/${props.artist.photo}`} alt={props.artist.fio} />
                         <div className={"short_info"}>
@@ -59,7 +59,7 @@ const ArtistAllInfo = (props) => {
 
 
                 <div className={"chronology"}> {/*  chronology  */}
-                    <Timeline lineColor={'#ddd'}>
+                    <Timeline style={{paddingRight:'-200px'}} lineColor={'#ddd'}>
                         {history1.map(artist =>
                             <TlItem artist={artist}/>
                         )}
@@ -75,10 +75,17 @@ const ArtistAllInfo = (props) => {
                     </div>
                 </Box>
                 <div className={"youtube_map"}> {/* youtube + map */}
-                    <h1 style={{margin:'5px', fontSize:'4.5vw'}}> Youtube-видео </h1>
-                    <YouTubeVideo src={props.artist.youtube}/>
-                    <h1 style={{margin:'5px', fontSize:'4.5vw'}}> Карты </h1>
-                    <GoogleMap link="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11207.174063609385!2d23.90389814009209!3d53.806961208218624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1702727647039!5m2!1sru!2sby"/>
+                    <Box style={boxWithBorder}>
+                        <h1 style={{margin:'5px', fontSize:'4.5vw'}}> Youtube-видео </h1>
+                        <YouTubeVideo src={props.artist.youtube}/>
+                    </Box>
+
+                    <Box style={boxWithBorder}>
+                        <h1 style={{margin:'5px', fontSize:'4.5vw'}}> Карты </h1>
+                        <GoogleMap link="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11207.174063609385!2d23.90389814009209!3d53.806961208218624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1702727647039!5m2!1sru!2sby"/>
+
+                    </Box>
+
 
 
                 </div>

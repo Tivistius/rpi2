@@ -1,7 +1,6 @@
 import React from 'react';
 
 const GoogleMap = ({link}) => {
-    console.log('asdasdasgdasgdjasgdasgdasghasghdgashdgashdgas',link);
     return (
         <iframe
             className = "MapContainer"
@@ -12,7 +11,7 @@ const GoogleMap = ({link}) => {
                 WebkitBoxShadow: '5px 6px 50px grey'
             }}
             width= "70%"
-            height="50%"
+            height="80%"
             src = {link}
             allowFullScreen={true}
             loading="lazy"

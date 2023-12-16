@@ -9,6 +9,7 @@ const TlItem = (props) => {
             dateText={props.artist[0]}
             dateInnerStyle={{ fontStyle:'italic', fontSize:'2vw', background: '#61b8ff', color: '#000' }}
             bodyContainerStyle={{
+
                 background: '#ddd',
                 padding: '20px',
                 borderRadius: '8px',

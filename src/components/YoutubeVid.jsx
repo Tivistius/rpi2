@@ -2,7 +2,7 @@ import React from 'react';
 
 const YouTubeVideo = (props) => {
     return (
-        <div style={{height: "50%", width:"70%"}}>
+        <div style={{height: "80%", width:"70%"}}>
             {/* Ваш скопированный код с YouTube */}
             <iframe
                 height="100%"
