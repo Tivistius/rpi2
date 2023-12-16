@@ -1,0 +1,39 @@
+.fullInfo{
+    width:80%;
+    margin: 2vw auto;
+    border: 0.6vw solid #12868a;
+    border-radius: 7vw;
+    padding: 1.5vw;
+}
+
+.Title{
+    text-align: center;
+    margin:0;
+    padding:0;
+    color: #2b61b5;
+    font-family: 'Arial';
+    align-self: center;
+    font-size: 7vw;
+    font-style: italic;
+    font-weight: bold;
+
+}
+.PhotoPart{
+    display:flex;
+
+    width:50%;
+    flex-direction: column;
+}
+
+.ImageStyle{
+    width: 100%;
+    height: auto;
+    border-radius: 5vw;
+}
+
+.Date{
+    font-family: 'Arial Narrow';
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 5vw;
+}

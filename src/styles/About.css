@@ -6,6 +6,7 @@
     margin: 2vw auto;
     background-image: url("../../public/images/backgroundfortext2.jpg");
     opacity : 0.79;
+    background-size: cover;
 }
 
 .about-content {

@@ -5,7 +5,7 @@ import axios from "axios";
 
 const fetchData = async () => {
     try {
-        const response = await axios.get('../images/info.json');
+        const response = await axios.get('../info.json');
         const temp = response.data;
         const currentDate = new Date();
         const dayOfWeek = currentDate.getDay();
@@ -27,6 +27,7 @@ const PageAbout = () => {
             setDataToShow(result);
         });
     }, []);
+
     return (
         <div>
             <About />

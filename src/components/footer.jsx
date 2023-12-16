@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className= 'DevInfo'>
                         Артур
                         <a href="https://github.com/ArturSnopko" target="_blank" rel="noopener noreferrer">
-                            <GitHubIcon style={{ fontSize: '4.5vw' }} />
+                            <GitHubIcon style={{ fontSize: '4.5vw', color: 'white', backgroundColor: '#01050a', borderRadius: '100vw' }} />
                         </a>
                     </div>
 
@@ -23,7 +23,7 @@ const Footer = () => {
                     <div className= 'DevInfo'>
                         Дмитрий
                         <a href="https://github.com/minduction"target="_blank" rel="noopener noreferrer">
-                            <GitHubIcon style={{ fontSize: '4.5vw' }} />
+                            <GitHubIcon style={{ fontSize: '4.5vw', color: 'white', backgroundColor: '#01050a', borderRadius: '100vw' }} />
                         </a>
                     </div>
                </div>
@@ -33,7 +33,7 @@ const Footer = () => {
                 <div className= 'DevInfo'>
                     Станислав
                     <a href="https://github.com/Tivistius" target="_blank" rel="noopener noreferrer">
-                        <GitHubIcon style={{ fontSize: '4.5vw' }} />
+                        <GitHubIcon style={{ fontSize: '4.5vw', color: 'white', backgroundColor: '#01050a', borderRadius: '100vw' }} />
                     </a>
                 </div>
 
