@@ -38,7 +38,7 @@ const ImageSlider = ({ images }) => {
             </Box>
             <Box display="flex" justifyContent="center" alignItems="center" mt={2}>
                 <IconButton onClick={handlePrevSlide}>
-                    <ArrowBackIcon style={{fontSize:"6.5vw"}} />
+                    <ArrowBackIcon style={{margin:'5px', fontSize:"6.5vw"}} />
                 </IconButton>
                 <Typography style={{fontSize:"4vw"}} variant="h6">{currentIndex + 1}/{images.length}</Typography>
                 <IconButton onClick={handleNextSlide}>
