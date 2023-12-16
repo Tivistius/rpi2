@@ -2,12 +2,12 @@ import React from 'react';
 
 const YouTubeVideo = (props) => {
     return (
-        <div>
+        <div style={{height: "50%", width:"70%"}}>
             {/* Ваш скопированный код с YouTube */}
             <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/7RWERLR2znU?si=v83g-4K2bX5hQ5nm"
+                height="100%"
+                width="100%"
+                src={props.src}
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

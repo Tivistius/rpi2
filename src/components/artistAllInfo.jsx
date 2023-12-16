@@ -1,49 +1,84 @@
 import React, {useState} from 'react';
-import {Avatar, ImageList, ImageListItem} from "@mui/material";
+import {Avatar, Box, Chip, Divider, ImageList, ImageListItem, Stack} from "@mui/material";
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 import TlItem from "./timelineItem";
 import ImageSlider from "./ImageSlider";
 import YouTubeVideo from "./YoutubeVid";
 import GoogleMapComponent from "./GoogleMap";
+import GoogleMap from "./GoogleMap";
+import * as PropTypes from "prop-types";
 
 
+function Sheet(props) {
+    return null;
+}
+
+Sheet.propTypes = {
+    sx: PropTypes.shape({borderRadius: PropTypes.string, height: PropTypes.number}),
+    variant: PropTypes.string
+};
 const ArtistAllInfo = (props) => {
-    const [artist, setArtists] = useState(props.artist.chronology);
+    console.log('props = ',props.artist);
+    //const history1 = [["1", 2, 3], ["1", 2, 4]];
+    const history1 = JSON.parse(props.artist.history);
+    console.log("history = ", history1);
+    console.log("ARRAY??? - ",Array.isArray(history1));
+    const [artist, setArtists] = useState(props.artist.history);
+    const gradientBorder = {
+        backgroundImage: 'linear-gradient(to right, #2196F3, #64B5F6)',
+        border: '2px solid #1A237E',
+        borderRadius: '8px',
+        padding: '16px',
+    };
+    const boxWithBorder = {
+        border: '1vw solid #1A237E',
+        borderRadius: '8px',
+        padding: '5px',
+    };
 
     return (
 
         <div>
 
             <div className={"bigContainer"}>  {/* All infoL */}
+                {/* Box с обводкой */}
 
-                <div className={"photo_short"}>
-                    <Avatar className={"small_photo"} src={`../images/${props.artist.photo}`} alt={props.artist.name} />
-                    <div className={"short_info"}>
-                        <div className={"head"}>
-                            <h1 className={"thin_text"}>{props.artist.name}</h1>
-                            <h1 className={"thin_text"}>({props.artist.lifetime})</h1>
+                <Box style={gradientBorder}>
+                    <div className={"photo_short"}>
+                        <Avatar className={"small_photo"} src={`../images/${props.artist.photo}`} alt={props.artist.fio} />
+                        <div className={"short_info"}>
+                            <div className={"head"}>
+                                <h1 className={"thin_text"}>{props.artist.fio}</h1>
+                                <h1 className={"thin_text"}>({props.artist.bornDate}-{props.artist.deathDate})</h1>
+                            </div>
+                            <p className={"short_description"}>{props.artist.shortInfo}</p>
                         </div>
-                        <p className={"short_description"}>{props.artist.description}</p>
                     </div>
-                </div>
+                </Box>
+
 
 
                 <div className={"chronology"}> {/*  chronology  */}
-
                     <Timeline lineColor={'#ddd'}>
-                        {artist.map(artist =>
+                        {history1.map(artist =>
                             <TlItem artist={artist}/>
                         )}
                     </Timeline>
+
                 </div>
-                <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} className={"gallery"}> {/* gallery */}
-                    <h1> GALLERY </h1>
-                    <div>
-                        <ImageSlider images={props.artist.gallery}/>
+                <Box style={boxWithBorder}>
+                    <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} className={"gallery"}> {/* gallery */}
+                        <h1 style={{margin:'5px', fontSize:'4.5vw'}}> Галерея </h1>
+                        <div>
+                            <ImageSlider images={JSON.parse(props.artist.gallery)}/>
+                        </div>
                     </div>
-                </div>
+                </Box>
                 <div className={"youtube_map"}> {/* youtube + map */}
-                    <YouTubeVideo/>
+                    <h1 style={{margin:'5px', fontSize:'4.5vw'}}> Youtube-видео </h1>
+                    <YouTubeVideo src={props.artist.youtube}/>
+                    <h1 style={{margin:'5px', fontSize:'4.5vw'}}> Карты </h1>
+                    <GoogleMap link="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11207.174063609385!2d23.90389814009209!3d53.806961208218624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1702727647039!5m2!1sru!2sby"/>
 
 
                 </div>
