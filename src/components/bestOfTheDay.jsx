@@ -6,6 +6,7 @@ const BestOfTheDay = (props) => {
    console.log(props);
     const { fio, bornDate, deathDate, gallery, history, photo, place, shortInfo, youtube } = props.toShow;
     const photoPath = `../images/${photo}`;
+    console.log('adasdkjasdgasjgdasgdhas', props.toShow);
 
     return (
         <div id={"bestOfTheDay"}>
@@ -23,7 +24,7 @@ const BestOfTheDay = (props) => {
                     </div>
                     <p className={"shortDescription"}>{shortInfo}</p>
                     <div className={"buttonMore"}>
-                        <Button variant="contained" color="secondary" className ='Button'>
+                        <Button href={`/musicians/artist/${props.toShow.id}`} variant="contained" color="secondary" className ='Button'>
                             <h1 style={{margin: '0px',fontSize: '2vw'}}>ПОДРОБНЕЕ</h1>
                         </Button>
 

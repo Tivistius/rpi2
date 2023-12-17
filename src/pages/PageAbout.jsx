@@ -28,6 +28,7 @@ const PageAbout = () => {
         });
     }, []);
 
+
     return (
         <div className = "about-all">
             <About />
