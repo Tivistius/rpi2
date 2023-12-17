@@ -7,7 +7,7 @@ const SearchSection = () => {
     return (
         <div className= 'SearchSection'>
             <img className= 'Logo'
-                src="/images/postav_logo.png"
+                src="/images/logo.png"
                 alt=":("
             />
             <div className= 'SearchContainer'>

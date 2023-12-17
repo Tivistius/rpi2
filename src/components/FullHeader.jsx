@@ -4,7 +4,7 @@ import SearchSection from "./SearchSection";
 
 const FullHeader = () => {
     return (
-        <div style={{ backgroundColor: '#c6bee5'}} >
+        <div style={{ backgroundColor: '#fff3ff'}} >
             <Header>
             </Header>
             <SearchSection>

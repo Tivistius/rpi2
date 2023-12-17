@@ -34,6 +34,7 @@ const ArtistAllInfo = (props) => {
         display:'flex',
         flexDirection:'column',
         alignItems:'center',
+        backgroundColor: 'white'
     };
 
     return (
