@@ -1,8 +1,10 @@
 import React from 'react';
 import '../styles/BestOfTheDay.css';
 import {Button, ThemeProvider} from "@mui/material";
+import { useTranslation } from 'react-i18next';
 
 const BestOfTheDay = (props) => {
+    const { t } = useTranslation();
    console.log(props);
     const { fio, bornDate, deathDate, gallery, history, photo, place, shortInfo, youtube } = props.toShow;
     const photoPath = `../images/${photo}`;
@@ -11,7 +13,7 @@ const BestOfTheDay = (props) => {
         <div>
             <div className = 'fullInfo'>
                 <h3 className = 'Title'>
-                    Деятель дня
+                {t('personOfDay')}
                 </h3>
                 <h3 className = 'Name'>
                     {fio}
@@ -24,7 +26,7 @@ const BestOfTheDay = (props) => {
                     <p className={"shortDescription"}>{shortInfo}</p>
                     <div className={"buttonMore"}>
                         <Button variant="contained" color="secondary" className ='Button'>
-                            <h1 style={{margin: '0px',fontSize: '2vw'}}>ПОДРОБНЕЕ</h1>
+                            <h1 style={{margin: '0px',fontSize: '2vw'}}>{t('more')}</h1>
                         </Button>
 
                     </div>

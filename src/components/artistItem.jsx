@@ -1,8 +1,10 @@
 import React from 'react';
 import {Avatar, Button, createTheme, Paper, ThemeProvider} from "@mui/material";
 import {lime, purple} from "@mui/material/colors";
+import { useTranslation } from 'react-i18next';
 
 const ArtistItem = (props) => {
+    const { t } = useTranslation();
     const theme = createTheme({
         palette: {
             primary: lime,
@@ -22,7 +24,7 @@ const ArtistItem = (props) => {
                     <div className={"buttonMore"}>
                         <ThemeProvider theme={theme}>
                             <Button variant="contained" color="secondary">
-                                <h1 style={{margin: '0px', fontSize: '1.3vw'}}>ПОДРОБНЕЕ</h1>
+                                <h1 style={{margin: '0px', fontSize: '1.3vw'}}>{t('more')}</h1>
                             </Button>
                         </ThemeProvider>
                     </div>

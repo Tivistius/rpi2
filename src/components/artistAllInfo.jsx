@@ -7,6 +7,8 @@ import YouTubeVideo from "./YoutubeVid";
 import GoogleMapComponent from "./GoogleMap";
 import GoogleMap from "./GoogleMap";
 import * as PropTypes from "prop-types";
+import { useTranslation } from 'react-i18next';
+
 
 
 function Sheet(props) {
@@ -18,6 +20,7 @@ Sheet.propTypes = {
     variant: PropTypes.string
 };
 const ArtistAllInfo = (props) => {
+    const { t } = useTranslation();
     console.log('props = ',props.artist);
     //const history1 = [["1", 2, 3], ["1", 2, 4]];
     const history1 = JSON.parse(props.artist.history);
@@ -68,7 +71,7 @@ const ArtistAllInfo = (props) => {
                 </div>
                 <Box style={boxWithBorder}>
                     <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} className={"gallery"}> {/* gallery */}
-                        <h1 style={{margin:'5px', fontSize:'4.5vw'}}> Галерея </h1>
+                        <h1 style={{margin:'5px', fontSize:'4.5vw'}}> {t('Gallery')} </h1>
                         <div>
                             <ImageSlider images={JSON.parse(props.artist.gallery)}/>
                         </div>
@@ -76,12 +79,12 @@ const ArtistAllInfo = (props) => {
                 </Box>
                 <div className={"youtube_map"}> {/* youtube + map */}
                     <Box style={boxWithBorder}>
-                        <h1 style={{margin:'5px', fontSize:'4.5vw'}}> Youtube-видео </h1>
+                        <h1 style={{margin:'5px', fontSize:'4.5vw'}}> {t('Map')} </h1>
                         <YouTubeVideo src={props.artist.youtube}/>
                     </Box>
 
                     <Box style={boxWithBorder}>
-                        <h1 style={{margin:'5px', fontSize:'4.5vw'}}> Карты </h1>
+                        <h1 style={{margin:'5px', fontSize:'4.5vw'}}> {t('Youtube')} </h1>
                         <GoogleMap link="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2560.009210908178!2d14.421308712452824!3d50.08611441341068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDA1JzEwLjAiTiAxNMKwMjUnMjYuMCJF!5e0!3m2!1sru!2sby!4v1702734021170!5m2!1sru!2sby"/>
 
                     </Box>
