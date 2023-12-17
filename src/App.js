@@ -14,7 +14,7 @@ function App() {
       <div>
 
           <FullHeader/>
-          <PageAbout/>
+
 
           <Router>
               <Routes>

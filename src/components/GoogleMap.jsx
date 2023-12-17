@@ -8,7 +8,8 @@ const GoogleMap = ({link}) => {
                 marginTop: "1em",
                 border: '0',
                 boxShadow: '-moz-initial',
-                WebkitBoxShadow: '5px 6px 50px grey'
+                WebkitBoxShadow: '5px 6px 50px grey',
+                marginBottom:'40px',
             }}
             width= "70%"
             height="80%"
