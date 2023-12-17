@@ -30,7 +30,7 @@ const ImageSlider = ({ images }) => {
             <Box display="flex" justifyContent="center" alignItems="center" mt={2}>
                 <Slide key={key} direction={slideDirection} in={true} mountOnEnter unmountOnExit>
                     <img
-                        src={`../images/${images[currentIndex]}`}
+                        src={`../../images/${images[currentIndex]}`}
                         alt={images[currentIndex].alt}
                         style={{ maxWidth: '100%', height: '45vw', objectFit: 'contain' }}
                     />

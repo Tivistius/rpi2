@@ -11,16 +11,17 @@ const ArtistItem = (props) => {
             secondary: purple,
         },
     });
+
     return (
         <Paper className={"shortInfoBox"}> {/* photo + short  desc */}
             <div className={"photo_short"}>
-                <Avatar className={"small_photo"} src={`../images/${props.artist.photo}`} alt={props.artist.name} />
+                <Avatar className={"small_photo"} src={`../images/${props.artist.photo}`} alt={props.artist.fio} />
                 <div className={"short_info"}>
                     <div className={"head"}>
-                        <h1 className={"thin_text"}>{props.artist.name}</h1>
-                        <h1 className={"thin_text"}>({props.artist.lifetime})</h1>
+                        <h1 className={"thin_text"}>{props.artist.fio}</h1>
+                        <h1 className={"thin_text"}>({props.artist.bornDate}-{props.artist.deathDate})</h1>
                     </div>
-                    <p className={"shortDescription"}>{props.artist.workplace}</p>
+                    <p className={"shortDescription"}>{props.artist.attribute}</p>
                     <div className={"buttonMore"}>
                         <ThemeProvider theme={theme}>
                             <Button variant="contained" color="secondary">

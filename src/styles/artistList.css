@@ -13,6 +13,7 @@
 .bigContainer .photo_short .small_photo{
     width: 40%;
     height: auto;
+    max-height: 20vw;
 
 }
 
@@ -23,6 +24,7 @@
     padding-left: 5px;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
 }
 
 .bigContainer .photo_short .short_info .head {
@@ -41,9 +43,10 @@
 }
 
 .bigContainer .photo_short .short_info .shortDescription {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     justify-content: center;
     display: flex;
+
 }
 
 .bigContainer .photo_short .short_info .buttonMore {

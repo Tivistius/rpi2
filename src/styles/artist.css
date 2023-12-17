@@ -41,7 +41,11 @@
     justify-content: center;
     display: flex;
 }
+.bigContainer .photo_short .short_info{
 
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
 .bigContainer .photo_short .short_description {
     font-size: 1.5vw;
     justify-content: center;
@@ -53,6 +57,7 @@
 }
 
 .bigContainer .shortInfoBox {
+
     border: 0.6vw solid #1f4e79; /* Толщина: 2px, стиль: solid, цвет: синий */
     padding: 0.7vw;
     margin: 0.7vw;
