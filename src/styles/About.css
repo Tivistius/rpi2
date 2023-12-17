@@ -10,12 +10,16 @@
 }
 
 .about-content {
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bolder;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:black;
 }
-
+.about-all{
+    background-color: #fbfaf2;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
 h2 {
     margin:0;
     font-weight: bolder;

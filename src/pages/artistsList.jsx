@@ -6,7 +6,7 @@ import '../styles/artistList.css'
 const ArtistsList = () => {
     const [artists, setArtists] = useState(artistArray);
     return (
-        <div>
+        <div style={{ backgroundColor: '#fbfaf2'}}>
             <div className={"bigContainer"}>  {/* All infoL */}
                 <ul style={{listStyleType: 'none', padding:'0px', margin:'0px'}}>
                     {artists.map(artist =>

@@ -29,7 +29,7 @@ const PageAbout = () => {
     }, []);
 
     return (
-        <div>
+        <div className = "about-all">
             <About />
             {dataToShow && <BestOfTheDay toShow={dataToShow} />}
         </div>
