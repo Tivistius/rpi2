@@ -7,14 +7,15 @@ import {useParams} from "react-router-dom";
 
 const Artist = () => {
 
-    const { id } = useParams();
 
+    const { id } = useParams();
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('../info.json');
+            const response = await axios.get('../../info.json');
             const temp = response.data;
-            const toShow = temp[1];
+            const toShow = temp[id];
+            console.log(temp[id]);
 
             return toShow;
         } catch (error) {
@@ -32,10 +33,16 @@ const Artist = () => {
     }, []);
     console.log(dataToShow);
 
+
+
+
+
     //const [artists, setArtists] = useState([artistArray[0]]);
     return (
 
         <div>
+
+
             {dataToShow && <ArtistAllInfo artist={dataToShow} />}
             {/*<ArtistAllInfo artist={dataToShow}/>*/}
         </div>

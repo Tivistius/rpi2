@@ -8,7 +8,7 @@ const BestOfTheDay = (props) => {
     const photoPath = `../images/${photo}`;
 
     return (
-        <div>
+        <div id={"bestOfTheDay"}>
             <div className = 'fullInfo'>
                 <h3 className = 'Title'>
                     Деятель дня

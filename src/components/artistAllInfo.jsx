@@ -45,7 +45,7 @@ const ArtistAllInfo = (props) => {
 
                 <Box style={boxWithBorder}>
                     <div className={"photo_short"}>
-                        <Avatar className={"small_photo"} src={`../images/${props.artist.photo}`} alt={props.artist.fio} />
+                        <Avatar className={"small_photo"} src={`../../images/${props.artist.photo}`} alt={props.artist.fio} />
                         <div className={"short_info"}>
                             <div className={"head"}>
                                 <h1 className={"thin_text"}>{props.artist.fio}</h1>
