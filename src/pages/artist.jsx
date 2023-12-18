@@ -40,7 +40,7 @@ const Artist = () => {
     //const [artists, setArtists] = useState([artistArray[0]]);
     return (
 
-        <div>
+        <div  style={{ backgroundColor: '#fbfaf2'}}>
 
 
             {dataToShow && <ArtistAllInfo artist={dataToShow} />}
