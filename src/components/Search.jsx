@@ -3,12 +3,21 @@
     import { faSearch } from '@fortawesome/free-solid-svg-icons';
     import '../styles/Search.css';
     import { useTranslation } from 'react-i18next';
+    import {Button, Link} from "@mui/material";
+    let text ='';
+
+    function schr(){
+        window.location.href = `/musicians/artistsList/${text}#`;
+    }
 
     const Search = () => {
+
         const { t } = useTranslation();
         const [query, setQuery] = useState('');
 
         const handleInputChange = (event) => {
+            text = event.target.value;
+            console.log('sdfsdfsdfds ---', text);
             setQuery(event.target.value);
         };
 
@@ -25,9 +34,11 @@
                     onChange={handleInputChange}
                     placeholder={t('Search')}
                 />
-                <button type="submit" className="search-btn">
+
+                <button onClick={schr} type="submit" className="search-btn" >
                     <FontAwesomeIcon icon={faSearch} className="search-icon" />
                 </button>
+
             </form>
 
         );

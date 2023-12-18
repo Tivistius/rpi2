@@ -1,4 +1,4 @@
-function idSearch(id,data){
+export default function idSearch(id,data){
     for (var i of data){
         if (i["id"]==id){
             return i;
@@ -16,5 +16,3 @@ function Search(str,data) {
     };
     return res;
 }
-
-export default idSearch;

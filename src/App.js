@@ -27,6 +27,7 @@ function App() {
               <Routes>
                   <Route path={"/musicians/about"} element={<PageAbout/>} />
                   <Route path="/musicians/artist/:id" element={<Artist />} />
+                  <Route path="/musicians/artistsList/:id" element={<ArtistsList />} />
                   <Route path="/musicians/artistsList" element={<ArtistsList />} />
                   <Route path="*" element={<Navigate to="/musicians/about" />} />
               </Routes>
