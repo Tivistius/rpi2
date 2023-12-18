@@ -4,6 +4,7 @@ import '../styles/artist.css'
 import ArtistAllInfo from "../components/artistAllInfo";
 import axios from 'axios';
 import {useParams} from "react-router-dom";
+import idSearch from '../functions'
 
 const Artist = () => {
 
@@ -13,9 +14,11 @@ const Artist = () => {
     const fetchData = async () => {
         try {
             const response = await axios.get('../../info.json');
+
             const temp = response.data;
-            const toShow = temp[id];
-            console.log(temp[id]);
+
+            const toShow = idSearch(id, temp);
+            console.log(toShow);
 
             return toShow;
         } catch (error) {
@@ -37,10 +40,11 @@ const Artist = () => {
 
 
 
+
     //const [artists, setArtists] = useState([artistArray[0]]);
     return (
 
-        <div>
+        <div  style={{ backgroundColor: '#fbfaf2'}}>
 
 
             {dataToShow && <ArtistAllInfo artist={dataToShow} />}

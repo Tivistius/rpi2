@@ -11,10 +11,10 @@ const Header = () => {
             <nav>
 
                 <ButtonGroup variant="contained" aria-label="outlined primary button group" className="roundedButtonGroup">
-                    <Button id='ButtonStyle'>{t('home')}</Button>
-                    <Button id='ButtonStyle'>{t('personOfDay')}</Button>
-                    <Button id='ButtonStyle'>{t('persons')}</Button>
-                    <Button id='ButtonStyle'>{t('aboutUs')}</Button>
+                    <Button href={"/musicians/about#"} id='ButtonStyle'>{t('home')}</Button>
+                    <Button href={"/musicians/about#bestOfTheDay"} id='ButtonStyle'>{t('personOfDay')}</Button>
+                    <Button href={"/musicians/artistsList#"} id='ButtonStyle'>{t('persons')}</Button>
+                    <Button href={"/musicians/about#about"} id='ButtonStyle'>{t('aboutUs')}</Button>
                 </ButtonGroup>
 
             </nav>

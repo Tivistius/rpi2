@@ -16,3 +16,5 @@ function Search(str,data) {
     };
     return res;
 }
+
+export default idSearch;
