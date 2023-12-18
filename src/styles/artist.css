@@ -1,8 +1,11 @@
 .bigContainer {
     display: flex;
     flex-direction: column;
-    margin-right: 7vw;
-    margin-left: 7vw;
+    margin-right: 14vw;
+    margin-left: 14vw;
+    padding-bottom: 7vw;
+    padding-top: 1vw;
+
 }
 
 .bigContainer .photo_short {
@@ -57,7 +60,6 @@
 }
 
 .bigContainer .shortInfoBox {
-
     border: 0.6vw solid #1f4e79; /* Толщина: 2px, стиль: solid, цвет: синий */
     padding: 0.7vw;
     margin: 0.7vw;
@@ -70,5 +72,15 @@
     height: 85vw;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .bigContainer .youtube_map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60vh;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
