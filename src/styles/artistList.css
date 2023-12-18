@@ -1,23 +1,27 @@
-.bigContainer {
+.bigContainerr {
     display: flex;
     flex-direction: column;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    padding-bottom: 7vw;
+    padding-top: 5vw;
 }
 
-.bigContainer .photo_short {
+.bigContainerr .photo_short {
     width:100%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.bigContainer .photo_short .small_photo{
-    width: 40%;
+.bigContainerr .photo_short .small_photo{
+    width: 25%;
     height: auto;
-    max-height: 20vw;
+    max-height: 9vw;
 
 }
 
-.bigContainer .photo_short .short_info {
+.bigContainerr .photo_short .short_info {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -27,33 +31,33 @@
     text-align: center;
 }
 
-.bigContainer .photo_short .short_info .head {
+.bigContainerr .photo_short .short_info .head {
     width: 100%;
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
 
-.bigContainer .photo_short .short_info .head .thin_text {
+.bigContainerr .photo_short .short_info .head .thin_text {
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 2.5vw;
+    font-size: 1.9vw;
     justify-content: center;
     display: flex;
 }
 
-.bigContainer .photo_short .short_info .shortDescription {
-    font-size: 2.5vw;
+.bigContainerr .photo_short .short_info .shortDescription {
+    font-size: 1.7vw;
     justify-content: center;
     display: flex;
 
 }
 
-.bigContainer .photo_short .short_info .buttonMore {
+.bigContainerr .photo_short .short_info .buttonMore {
     margin: 0;
 }
 
-.bigContainer .shortInfoBox {
+.bigContainerr .shortInfoBox {
     border: 0.6vw solid #1f4e79; /* Толщина: 2px, стиль: solid, цвет: синий */
     padding: 0.7vw;
     margin: 0.7vw;
