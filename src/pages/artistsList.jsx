@@ -40,7 +40,7 @@ const ArtistsList = () => {
     };
 
 
-    const [artists, setArtists] = useState(artistArray);
+    const [artists, setArtists] = useState([]);
 
     useEffect(() => {
         fetchData().then(result => {
