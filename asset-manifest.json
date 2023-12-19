@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/rpi2/static/css/main.971e7d00.css",
+    "main.js": "/rpi2/static/js/main.bf8a15d5.js",
+    "static/media/backgroundfortext2.jpg": "/rpi2/static/media/backgroundfortext2.e5bcfa263ac3e153a632.jpg",
+    "index.html": "/rpi2/index.html",
+    "main.971e7d00.css.map": "/rpi2/static/css/main.971e7d00.css.map",
+    "main.bf8a15d5.js.map": "/rpi2/static/js/main.bf8a15d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.971e7d00.css",
+    "static/js/main.bf8a15d5.js"
+  ]
+}
